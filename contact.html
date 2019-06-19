@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="assets/css/resets.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div id="logo_div">
+          <strong>Jose Robles</strong>
+        </div>
+  
+        <nav>
+        <a id="a_about"     href="index.html">About</a>
+        <a id="a_portfolio" href="portfolio.html">Portfolio</a>
+        <a id="a_contact"   href="#"><strong>Contact</strong></a>
+        </nav>
+    </header>
+
+  <section class="container">
+    <h1>Contact</h1>
+    <hr>
+   
+    <form action="submit" method="post">
+      
+      <fieldset class="contact_info">
+          <label for="msg_name">Name</label>
+          <input type="text" name="msg_name" id="msg_name">
+          <label for="msg_email">Email</label>
+          <input type="email" name="msg_email" id="msg_email">
+          <label for="msg_comment">Message</label>
+          <textarea name="msg_comment" id="msg_comment"></textarea>
+      </fieldset>
+      
+      <div>
+        <input type="submit" name="submit" value="Submit">  
+      </div>
+
+    </form>
+  </section>
+
+  <footer id="flex_footer">
+      <small>
+          Copyright &copy; 2019 Jose Robles.  All rights reserved.
+      </small>
+  </footer>
+</body>
+</html>

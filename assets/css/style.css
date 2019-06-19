@@ -1,0 +1,282 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-image: url('images/gravel.png');
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
+h1 {
+    color: rgb(74,170,165); 
+    font-size: 1.49em;
+    font-weight: bold;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    padding:20px;
+
+}
+header {
+    background: white;
+    height: 75px;
+    margin:0px;
+    border-bottom: 2px solid #dddddd;
+}
+
+hr {
+    height: 1px;
+    background: #dddddd;
+}
+
+#logo_div {
+    display: inline-block;
+    color: white;
+    background: rgb(74,170,165);
+
+    float:left;
+    height:25px;
+    padding: 25px 30px;
+    margin:0px 0px 0px 183px;
+
+    font-size: 1.49em;
+    letter-spacing:0.01em;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-weight: bold;
+}
+
+#logo_div_box: {
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+header nav {
+    float: right;
+    background: white;
+    margin: 0px 180px 0px 0px;
+    padding: 30px 0px;
+    font-size: 0.85em;  
+
+}
+
+header nav a {
+    color: rgb(74,170,165);
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    padding: 0px 20px;
+    text-decoration: none;
+}
+
+#a_about {
+    border-right: 1px solid; 
+}
+
+#a_portfolio {
+    border-right: 1px solid; 
+}
+
+#a_contact {
+    padding-right:0px;
+    margin-right:0px;
+}
+
+.container {
+    width:960px;
+    margin: 30px auto 50px auto;
+    padding: 5px;
+    color:#777777;
+    text-align: justify;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    line-height: 1.6em;
+    background: white;
+    flex: 1 0 auto;
+
+}
+
+.container img {
+    float: left;
+    height: 200px;
+    width: 200px;
+    margin: 20px 20px 20px 0px;
+}
+
+.container form {
+    overflow: hidden;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    width: 100%;
+
+}
+
+.container fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .contact_info {
+      width: 99%;
+  }
+  
+   .contact_info label  {
+    display: block;
+    width: 100%;
+    
+}
+
+  .contact_info input  {
+      display: block;
+      width: 100%;
+      margin-bottom:10px;
+  }
+
+  .contact_info textarea{
+      display:block;
+      width:100%;
+      height: 150px;
+      font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  }
+
+  input[type=button], input[type=submit], input[type=reset] {
+    background-color: #4aaaa5;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+#flex_footer {
+    background-color:#666666;
+    border-top: 8px solid #4aaaa5;
+    flex-shrink: 0;
+    padding: 20px;
+    text-align:center;
+    color:#dddddd;
+    font-size: 0.8em;
+}
+
+ .image_grid {
+     display:flex;
+     flex-flow: row wrap;
+ }
+
+ .picture_frame {
+     width: 200px;
+     height: 200px;
+     margin: 20px;
+ }
+
+ .picture_frame img {
+     margin:0px;
+ }
+
+ .picture_frame a {
+
+    display:inline-block;
+
+    position:relative;
+    top: -40px;
+
+    box-sizing:border-box;
+    width: 200px;
+    padding:5px 0px ;
+
+    font:  'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    text-align:center;
+
+    /* width: 200px; */
+ 
+    background: #4aaaa5;
+    color: #dddddd;
+   
+    text-decoration: none;
+
+ }
+
+
+ /* Media Queries */
+
+ /*==========================================================================*/
+ /* Viewport size up to 980px   (laptop, large displays)                         */
+ /*==========================================================================*/
+
+ @media screen and (max-width: 980px) { 
+     .container {
+         margin: 30px auto;
+         width: 90%;
+     }
+ 
+ #logo_div {
+    float:none;
+    margin: 0px 0px 0px 50px;
+}
+
+header nav {
+
+    margin-right: 25px;
+}
+
+
+
+ /*==========================================================================*/
+ /* Viewport size up to 768px  (tablets, small devices)                      */
+ /*==========================================================================*/
+ @media screen and (max-width: 768px) {
+    
+    #logo_div {
+        float:none;
+        margin: 0px 0px 0px 30px;
+    }
+    
+    #logo_div strong {
+        margin: 0 auto;
+        /* font-size: .80em; */
+    }
+
+    header nav {
+        margin-right:25px;
+    }
+
+}
+
+ /*==========================================================================*/
+ /* Viewport size up to 640px (iPhone in landscape orientation)              */
+ /*==========================================================================*/
+
+ @media screen and (max-width: 640px) {
+
+    header {    
+       text-align: center;
+   }
+
+   #logo_div {
+       float:none;
+       margin: 0;
+       width:100%;
+       padding: 25px 0px;
+       display: inline-block;
+   }
+
+   .container {
+       margin: 100px auto;
+   }
+
+   .container img {
+       margin: 0px 0px 10px 120px;
+   }
+   .container p {
+       clear: both;
+   }
+
+   #logo_div strong {
+       margin: 0 auto;
+   }
+
+   header nav {
+       width: 100%;
+       margin:0 auto;
+   }
+}
+
