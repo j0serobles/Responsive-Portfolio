@@ -209,7 +209,7 @@ header nav a {
  @media screen and (max-width: 980px) { 
      .container {
          margin: 30px auto;
-         width: 50%;
+         width: 80%;
      }
  
  #logo_div {
@@ -221,17 +221,13 @@ header nav {
 
     margin-right: 25px;
 }
-
-
-
-
  /*==========================================================================*/
  /* Viewport size up to 768px  (tablets, small devices)                      */
  /*==========================================================================*/
  @media screen and (max-width: 768px) {
 
     .container {
-        width: 65%;
+        width: 80%;
     }
     
     #logo_div {
